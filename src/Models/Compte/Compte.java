@@ -56,6 +56,7 @@ public abstract class Compte {
         if(c!=null){
             c.setSolde(c.getSolde() + montant);
             this.listeOperations.put(this.code,versement);
+            this.listeOperations.put(destination,versement);
         }else {
             System.out.println("destination no exist");
         }
